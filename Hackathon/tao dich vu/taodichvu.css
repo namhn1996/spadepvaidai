@@ -1,0 +1,28 @@
+.img-card {
+    width: 23%;
+    height: 300px;
+  }
+  .item img {
+    height: 290px;
+  }
+  .logOut{
+    border: none;
+    background: none;
+    font-weight:550;
+    margin-left: 14px;
+    cursor: pointer;
+  }
+
+li span{
+  border-radius: 5px;
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  color: #428bca;
+  text-decoration: none;
+  cursor: pointer;
+  
+}
+li {
+  text-align: -webkit-match-parent;
+}

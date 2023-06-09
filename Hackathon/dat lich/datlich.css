@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-style: normal;
+  font-family: "SF Pro Text", "SF Pro Icons", "AOS Icons", "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
+  width: 100%;
+  background-color: rgba(250, 235, 215, 0.397);
+}
+header {
+  width: 100%;
+  min-width: 320px;
+  font-size: 17px;
+  background-color: rgba(221, 208, 193, 0.116);
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  background-color: aliceblue;
+  height: 70px;
+}
+header .headerClass .ulheaderClass {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  line-height: 40px;
+}
+header .headerClass .ulheaderClass li {
+  padding-top: 10px;
+  display: block;
+}
+header .headerClass .ulheaderClass li .reg,
+.login {
+  background-color: rgba(245, 245, 220, 0.007);
+  color: rgba(0, 0, 0, 0.8);
+  border: none;
+  font-size: 17px;
+}
+header .headerClass .ulheaderClass li a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+header .headerClass .ulheaderClass li .iconHeading {
+  font-size: 25px;
+  margin-left: 10px;
+}
+.liicon {
+  position: relative;
+}
+.liicon .bagIcon {
+  position: absolute;
+  top: 15px;
+  left: 27px;
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgb(102 84 73);
+  color: #fff;
+  text-align: center;
+  letter-spacing: 0;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 20px;
+}
+main .oder h1 {
+  margin-top: 108px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 50px;
+}
+main .oder h2{
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+main .oder img{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+main form{
+    text-align: center;
+    border: 1px solid black;
+    margin: 20px 600px;
+    padding: 20px;
+    background-color: rgb(248, 248, 248);
+    border-radius: 20px;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+main .oder .oder-content .input-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 30px 50px 50px;
+}
+main .oder .oder-content .input-size{
+    width: 400px;
+    height: 60px;
+    text-align: center;
+}
+main .oder .oder-content .tinhtien{
+    background-color: rgb(218, 229, 238);
+    border-radius: 20px;
+    font-size: 34px;
+    margin-bottom: 40px;
+}
+main .oder .oder-content .tinhtien .price-card,.price-oder,.price{
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 40px;
+  
+}
+main .oder .oder-content .tinhtien .line{
+    width: 100%;
+    border: 2px solid black;
+    margin-bottom: 30px;
+}
+main .oder .oder-content button{
+    width: 80%;
+    background-color: rgb(98, 192, 255);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    height: 60px;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+main .oder .oder-content button:hover{
+    background-color: rgb(59, 167, 255);
+    color: rgb(255, 255, 255);
+    transition: all .3s ease;
+    
+}
+footer {
+  background-color: rgba(90, 85, 77, 0.61);
+}
+footer .footer-class {
+  text-align: center;
+  padding: 20px 130px;
+}
+footer .footer-class a {
+  text-decoration: none;
+  color: black;
+}
+footer .footer-class .logo p {
+  font-size: 19px;
+}
+footer .footer-class .footer-text {
+  padding-top: 30px;
+  text-align: left;
+  padding-left: 200px;
+}
+footer .footer-class h4 {
+  padding-top: 10px;
+}
+footer .boder-footer {
+  border: 2px solid rgba(255, 255, 255, 0.473);
+  width: 50%;
+  margin-left: 25%;
+}
+footer .add {
+  text-align: center;
+  padding: 30px 0;
+}
+.modal h1 {
+  width: 100%;
+  text-align: center;
+}
+.modal .form-reg,
+.form-login {
+  width: 100%;
+  height: 40px;
+}
+.hide {
+  display: none !important  ;
+}
+.logOut{
+  border: none;
+  background: none;
+  font-weight:550;
+  margin-left: 14px;
+  cursor: pointer;
+}
+.toLogin, .backReg{
+  margin-top: 20px;
+  text-decoration:underline;
+  cursor: pointer;
+}
+.oder, .lichsu{
+  cursor: pointer;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang Quản Lý</title>
+    <link
+      href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body>
+    <div class="container-sm">
+      <video autoplay loop muted preload src="../Img/tunnel_-_26475 (1080p).mp4"></video>
+      <div class="row">
+        <div class="col-md-3">
+          <ul class="nav nav-pills nav-stacked">
+            <li class="active">
+              <a href=""><i class="fa fa-home fa-fw"></i>Trang chủ</a>
+            </li>
+            <li onclick="clickSideBar(1)">
+              <a><i class="fa fa-list-alt fa-fw"></i>Quản lý tài khoản</a>
+            </li>
+            <li onclick="clickSideBar(2)">
+              <a><i class="fa fa-file-o fa-fw"></i>Quản lý dịch vụ</a>
+            </li>
+            <li onclick="clickSideBar(3)">
+              <a><i class="fa fa-bar-chart-o fa-fw"></i>Quản lý lịch hẹn</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-9 well">
+          <h1 class="title">Chào mừng bạn đến với bình nguyên vô tận</h1>
+          <div class="account" style="display: none">
+            <h1>Quản Lý Tài Khoản</h1>
+            <table>
+              <tr>
+                <th>ID</th>
+                <th>Tên</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Trạng thái</th>
+              </tr>
+              <tbody class="acc-table">
+
+              </tbody>
+            </table>
+          </div>
+
+          <div class="service" style="display: none">
+            <h1>Quản Lý Dịch Vụ</h1>
+            thêm dịch vụ
+            <div class="form-add">
+              <form id="main-form">
+                <label for="">Dịch vụ</label>
+                <select class="service inputform" id="lishdichvu" value="chon">
+                  <option value="chon">--Vui lòng chọn--</option>
+                  <option value="toc">Chăm sóc tóc</option>
+                  <option value="massage">Massage</option>
+                  <option value="nail">Nail</option>
+                  <option value="da">Chăm sóc da</option>
+                  <option value="trietlong">Triệt lông</option>
+                  <option value="nanmun">Nặn mụn</option>
+                </select>
+                <label for="imgsp">Ảnh mô ta</label>
+                <input
+                  type="text"
+                  class="imgsp inputform"
+                  id="imgsp"
+                  name="img"
+                />
+                <label for="servicename">Tên dịch vụ</label>
+                <input
+                  type="text"
+                  name=""
+                  class="servicename inputform"
+                  id="servicename"
+                />
+
+                <label for="price">Giá dịch vụ</label>
+                <input type="number" class="price inputform" id="price" />
+
+                <button type="submit" class="taobtn">Tạo dịch vụ</button>
+                <button type="submit" class="editbtn hide">
+                  Xác nhận sửa dịch vụ
+                </button>
+
+                <div id="hienthi">hiển thị</div>
+              </form>
+            </div>
+
+            xóa sản phẩm
+            <table class="deletetable" id="delete-table">
+              <tr>
+                <th>Mã dịch vụ</th>
+                <th>Tên dịch vụ</th>
+                <th>Đường dẫn ảnh</th>
+                <th>Giá dịch vụ</th>
+                <th>Chỉnh sửa</th>
+              </tr>
+              <tbody id="tbody">
+                <!-- render dữ liệu -->
+              </tbody>
+            </table>
+            <div class="edit-service"></div>
+          </div>
+
+          <div class="oder" style="display: none">
+            <h1>Quản lý Đặt Lịch</h1>
+            <table>
+              <tr>
+                <th>Mã lịch hẹn</th>
+                <th>Ngày hẹn</th>
+                <th>Khung giờ</th>
+                <th>Tên khách hàng</th>
+                <th>Email khách hàng</th>
+                <th>Dịch vụ</th>
+                <th>Số người</th>
+                <th>Tổng tiền</th>
+                <th>Trạng thái</th>
+                <th></th>
+              </tr>
+              <tbody class="odertable"> 
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="admin.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"
+  ></script>
+</html>

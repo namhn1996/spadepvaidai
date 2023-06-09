@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lịch Sử Đặt Lịch Hẹn</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="lichsu.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="headerClass">
+          <ul class="ulheaderClass">
+            <li>
+              <a href="../trang chu/index.html"
+                ><img
+                  src="../Img/Beauty_and_Spa_Logo.png"
+                  alt="spa-logo"
+                  style="width: 50px"
+              /></a>
+            </li>
+            <li>
+              <a href="../trang chu/index.html"><b>Trang chủ</b></a>
+            </li>
+            <li>
+              <a href="../trang chu/index.html#dichvu"><b>Dịch vụ</b></a>
+            </li>
+            <li class="oder">
+              <a href="../dat lich/datlich.html"><b>Đặt Lịch Hẹn</b></a>
+            </li>
+            <li>
+              <a href="../co so/coso.html"><b>Cơ Sở</b></a>
+            </li>
+            <li class="btnReg">
+              <button
+                type="button"
+                class="reg btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+              >
+                <b>Đăng Ký</b>
+              </button>
+            </li>
+            <li class="btnLogin">
+              <button
+                type="button"
+                class="login btn"
+                data-bs-toggle="modal"
+                data-bs-target="#loginBtn"
+              >
+                <b>Đăng Nhập</b>
+              </button>
+            </li>
+            <li class="userLogin hide"></li>
+            <li class="btnLogout hide">
+              <button class="logOut">Đăng xuất</button>
+            </li>
+            <li class="lichsu">
+              <span><b>Lịch Sử Hẹn</b></span>
+            </li>
+            <li>
+              <a href=""><i class="bi bi-list iconHeading"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h1>Thông Tin Lịch Hẹn</h1>
+      <img
+        src="https://nhaspa.com.vn/wp-content/uploads/2022/12/Line.png"
+        alt=""
+      />
+      <table>
+        <tr>
+          <th>ID</th>
+          <th>Tên khách hàng</th>
+          <th>Email</th>
+          <th>Ngày đặt</th>
+          <th>Khung giờ</th>
+          <th>Số người</th>
+          <th>Dịch vụ</th>
+          <th>Giá tiền</th>
+          <th>Tình trạng</th>
+          <th>Chỉnh sửa</th>
+        </tr>
+        <tbody  id="history">
+          
+        </tbody>
+        <!-- <tr>
+                <th>1</th>
+                <th>2221</th>
+                <th>Nguyễn Phương nam</th>
+                <th>namhn1996@gmail.com</th>
+                <th>02/06/2023</th>
+                <th>9:30</th>
+                <th>1</th>
+                <th>Gội đầu dưỡng sinh</th>
+                <th>Chưa hoàn thành</th>
+                <th><button class="edit-btn">Sửa</button><button class="delete-btn">Xóa</button></th>
+            </tr> -->
+      </table>
+
+    </main>
+    <footer class="">
+      <div class="footer-class row">
+        <div class="col-4 footer-text">
+          <h1>Thông Tin</h1>
+          <a href="../trang chu/index.html">
+            <h4>Trang Chủ</h4>
+          </a>
+          <a href="../trang chu/index.html#dichvu">
+            <h4>Dịch Vụ</h4>
+          </a>
+
+          <a href="../dat lich/datlich.html">
+            <h4>Đặt Lịch Hẹn</h4>
+          </a>
+          <a href="../co so/coso.html">
+            <h4>Cơ Sở</h4>
+          </a>
+          <a
+            href=""
+            data-bs-target="#loginBtn"
+            class="login btn"
+            data-bs-toggle="modal"
+          >
+            <h4 style="margin-left: -12px">Đăng Nhập</h4>
+          </a>
+        </div>
+        <div class="col-4">
+          <div class="logo">
+            <a href="../trang chu/index.html"
+              ><img
+                style="width: 200px"
+                src="../Img/Beauty_and_Spa_Logo.png"
+                alt=""
+            /></a>
+            <p>
+              ANDARA Beaty & Spa là chuỗi spa đa tiện ích chăm sóc sức khoẻ và
+              làm đẹp bền vững, nâng tầm trải nghiệm không gian tự nhiên mộc mạc
+              của resort tới thật gần gũi với những hoạt động chăm sóc cơ thể
+              mỗi ngày của gia đình Việt hiện đại
+            </p>
+          </div>
+        </div>
+        <div class="col-4 footer-text">
+          <h1>Dịch Vụ</h1>
+          <a href="">
+            <h4>Chăm Sóc Tóc</h4>
+          </a>
+          <a href="">
+            <h4>Massage</h4>
+          </a>
+          <a href="">
+            <h4>Nail</h4>
+          </a>
+          <a href="">
+            <h4>Chăm Sóc Da</h4>
+          </a>
+          <a href="">
+            <h4>Triệt Lông</h4>
+          </a>
+          <a href="">
+            <h4>Nặn Mụn</h4>
+          </a>
+        </div>
+      </div>
+      <div class="boder-footer"></div>
+      <div class="add">
+        <p>
+          Sảnh A - Tầng 7 - Toà nhà Sông Đà - Phạm Hùng - Cầu Giấy - Hà Nội
+          <br />
+          Hotline: 034.66.888.96 / Email: hello@andara.com.vn<br />
+          Công ty TNHH Thương mại và dịch vụ ANDARA Beaty & Spa<br />
+          Mã Doanh nghiệp: 0110017729
+        </p>
+      </div>
+    </footer>
+
+    <!-- modal reg -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 form-reg" id="staticBackdropLabel">
+              Thông Tin Đăng Ký
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form class="regForm">
+              <div class="error alert alert-danger hide"></div>
+              <div class="mb-3">
+                <label for="exampleInputEmail" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control regemail-input"
+                  id="exampleInputEmail"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text">
+                  Vui lòng nhập địa chỉ Email muốn đăng ký
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputName" class="form-label">Name</label>
+                <input
+                  type="name"
+                  class="form-control regname-input"
+                  id="exampleInputName"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text">
+                  Vui lòng nhập họ và tên của bạn
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control regpassword-input1"
+                  id="exampleInputPassword1"
+                />
+                <div id="emailHelp" class="form-text">
+                  Vui lòng nhập mật khẩu gồm 8 kí tự
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control regpassword-input2"
+                  id="exampleInputPassword"
+                />
+                <div id="emailHelp" class="form-text">
+                  Vui lòng xác nhận lại mật khẩu
+                </div>
+              </div>
+              <button type="submit" class="form-reg btn btn-primary reg-btn">
+                Đăng Ký
+              </button>
+              <p class="toLogin">Nếu bạn đã có tài khoản thì ấn vào đây</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal login -->
+    <div
+      class="modal fade signIn"
+      id="loginBtn"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 form-login" id="staticBackdropLabel">
+              Đăng Nhập
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form class="loginForm">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control login-email"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text">
+                  Vui lòng nhập địa chỉ Email
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword2" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control login-password"
+                  id="exampleInputPassword2"
+                />
+                <div id="emailHelp" class="form-text">
+                  Vui lòng nhập mật khẩu gồm 8 kí tự
+                </div>
+              </div>
+              <button type="submit" class="login-btn btn btn-primary reg-btn">
+                Đăng Nhập
+              </button>
+              <p class="backReg">Nếu bạn chưa tài khoản thì ấn vào đây</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lichsu.js"></script>
+  </body>
+</html>

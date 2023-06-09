@@ -1,0 +1,73 @@
+@import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css);
+body{margin-top:20px;}
+.fa-fw {
+width: 2em;
+}
+.container-sm{
+  position: relative;
+  
+}
+video{
+  position: absolute;
+
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+li{
+    cursor: pointer;
+}
+.red{
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.color{
+    color: red;
+}
+.well h1{
+    text-align: center;
+}
+.main-form{
+    width: 500px;
+}
+.main-form .inputform{
+    width: 400px;
+}
+.taobtn{
+    text-align: center;
+}
+  /* Thiết lập cơ bản cho bảng */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Thiết lập màu nền và đường viền cho tiêu đề */
+  th{
+    background-color: #c9c9c9;
+    border: 1px solid #bebebe;
+    padding: 8px;
+    text-align: center;
+  }
+
+  /* Thiết lập đường viền và padding cho các ô trong bảng */
+  td {
+    border: 1px solid #c4c4c4;
+    padding: 8px;
+    text-align: center;
+    background-color: #f7f7f7;
+  }
+
+  /* Thiết lập màu nền cho các hàng */
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+

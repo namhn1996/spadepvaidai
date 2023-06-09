@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tạo dịch vụ</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+>
+    <link rel="stylesheet" href="taodichvu.css" />
+  </head> 
+  <body>
+    <form id="main-form">
+      <label for="">Dịch vụ</label>
+      <select class="service" id="lishdichvu" value="chon">
+        <option value="chon">--Vui lòng chọn--</option>
+        <option value="toc">Chăm sóc tóc</option>
+        <option value="massage">Massage</option>
+        <option value="nail">Nail</option>
+        <option value="da">Chăm sóc da</option>
+        <option value="trietlong">Triệt lông</option>
+        <option value="nanmun">Nặn mụn</option>
+      </select>
+      <br />
+      <label for="imgsp">Ảnh mô ta</label>
+      <input type="text" class="imgsp" id="imgsp" name="img" /> <br />
+      <label for="servicename">Tên dịch vụ</label>
+      <input type="text" name="" class="servicename" id="servicename" /><br />
+
+      <label for="price">Giá dịch vụ</label>
+      <input type="number" class="price" id="price"  /><br />
+
+      <button type="submit" class="taobtn">Tạo sp</button>
+    </form>
+
+    <div id="hienthi">hiển thị</div>
+  </body>
+  <script src="taodichvu.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js
+"></script>
+</html>

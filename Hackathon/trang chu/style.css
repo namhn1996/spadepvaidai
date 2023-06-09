@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-style: normal;
+  font-family: "SF Pro Text", "SF Pro Icons", "AOS Icons", "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
+  width: 100%;
+  background-color: rgba(250, 235, 215, 0.397);
+}
+header {
+  width: 100%;
+  min-width: 320px;
+  font-size: 17px;
+  background-color: rgba(221, 208, 193, 0.116);
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  background-color: aliceblue;
+  height: 70px;
+}
+header .headerClass .ulheaderClass {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  line-height: 40px;
+}
+header .headerClass .ulheaderClass li {
+  padding-top: 10px;
+  display: block;
+}
+header .headerClass .ulheaderClass li .reg,
+.login {
+  background-color: rgba(245, 245, 220, 0.007);
+  color: rgba(0, 0, 0, 0.8);
+  border: none;
+  font-size: 17px;
+}
+header .headerClass .ulheaderClass li a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+header .headerClass .ulheaderClass li .iconHeading {
+  font-size: 25px;
+  margin-left: 10px;
+  display: none ;
+}
+.sectionClass1 .welcome {
+  text-align: center;
+  margin: 50px 100px;
+  padding: 0 200px;
+  margin-bottom: 340px;
+  position: relative;
+}
+.sectionClass1 .welcome h1 {
+  margin-top: 108px;
+  margin-bottom: 30px;
+}
+.sectionClass1 .layoutWelcome {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  margin-top: -270px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  z-index: 1;
+}
+.sectionClass1 .layoutWelcome .layout {
+  border: 1px solid rgb(15, 15, 15);
+  text-align: center;
+  height: 500px;
+  width: 450px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0px 12px 42px 0px rgba(0, 0, 0, 0.18);
+}
+.sectionClass1 .layoutWelcome .layout .layoutElement {
+  margin-top: 70px;
+}
+.sectionClass1 .layoutWelcome .layout .layoutElement .layoutText {
+  margin-top: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.sectionClass1 .layoutWelcome .layout .layoutElement h1 {
+  padding-top: 70px;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 44px;
+}
+.sectionClass1 .layoutWelcome .layout .layoutElement p {
+  font-size: 18px;
+  line-height: 27px;
+}
+.sectionClass1 .layoutWelcome .layout1 {
+  padding: 30px;
+  height: 570px;
+  margin-bottom: 25px;
+}
+.sectionClass1 .layoutWelcome .layout .iconLayout {
+  border: 50px solid rgba(255, 255, 0, 0.349);
+  font-size: 50px;
+  border-radius: 50%;
+}
+.sectionClass1 .layoutWelcome .layout a {
+  text-decoration: none;
+  color: black;
+}
+.imgWelcome {
+  background-image: url(../Img/imgwelcome.jpg);
+  width: 100%;
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  /* cố định bg vào khung */
+}
+.imgWelcome .imgText {
+  position: absolute;
+  bottom: 90px;
+  text-align: center;
+  padding: 0 30%;
+  color: rgb(245, 235, 235);
+  font-size: 25px;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 30px;
+}
+.serviceClass h1 {
+  text-align: center;
+  margin: 50px;
+  font-weight: 700;
+}
+.serviceClass .cardService {
+  border: 10px solid white;
+  margin: 10px 5px 20px 5px;
+  background-color: white;
+  border-radius: 30px;
+  padding: 10px;
+}
+.serviceClass .cardService .cardBody {
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px;
+}
+.serviceClass .cardService .cardBody h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+.imgBg {
+  margin: 50px 0;
+}
+.sectionClass2 h1 {
+  text-align: center;
+  font-weight: 600;
+  margin: 20px 0;
+}
+.sectionClass2 .container-fluid {
+  display: flex;
+  justify-content: space-evenly;
+}
+.container-fluid .col-3 {
+  width: 24%;
+  height: 500px;
+}
+.col-3 img {
+  width: 100%;
+  height: 100%;
+  margin: 10px;
+  padding: 10px 0;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.section-review h1,
+.section-last h1 {
+  text-align: center;
+  margin: 50px 0;
+  font-weight: 600;
+}
+.section-review .slide-review {
+  margin: 50px 0;
+}
+.section-review .slide-review .carousel-inner {
+  background-image: url(https://nhaspa.com.vn/wp-content/uploads/2023/04/bon-rua-tay-nhaspa.webp);
+  height: 460px;
+  width: 100%;
+  position: relative;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section-review .slide-review .carousel-inner .review {
+  text-align: center;
+  position: absolute;
+  bottom: 30%;
+  top: 50%;
+  color: white;
+}
+.section-review .slide-review .carousel-inner .review .review-conten {
+  font-family: serif;
+}
+.section-review .slide-review .carousel-inner .review .review-name {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding-top: 20px;
+  font-size: 40px;
+}
+.section-review .img-review,
+.section-last .card-last {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.section-review .img-review .card,
+.section-last .card {
+  width: 20%;
+  border-radius: 20px;
+}
+.section-review .img-review .card a {
+  text-decoration: none;
+  color: black;
+}
+.section-review .img-review .card img,
+.section-last img {
+  object-fit: cover;
+  height: 300px;
+  border-radius: 20px;
+}
+.section-review .img-review .card .card-text,
+.section-last .card-text,
+.section-last .card-title {
+  text-align: center;
+}
+footer {
+  background-color: rgba(90, 85, 77, 0.61);
+}
+footer .footer-class {
+  text-align: center;
+  padding: 20px 130px;
+}
+footer .footer-class a {
+  text-decoration: none;
+  color: black;
+}
+footer .footer-class .logo p {
+  font-size: 19px;
+}
+footer .footer-class .footer-text {
+  padding-top: 30px;
+  text-align: left;
+  padding-left: 200px;
+}
+footer .footer-class h4 {
+  padding-top: 10px;
+}
+footer .boder-footer {
+  border: 2px solid rgba(255, 255, 255, 0.473);
+  width: 50%;
+  margin-left: 25%;
+}
+footer .add {
+  text-align: center;
+  padding: 30px 0;
+}
+.modal h1 {
+  width: 100%;
+  text-align: center;
+}
+.modal .form-reg,
+.form-login {
+  width: 100%;
+  height: 40px;
+}
+.hide {
+  display: none !important  ;
+}
+.logOut{
+  margin-left: 14px;
+  cursor: pointer;
+}
+.toLogin, .backReg{
+  margin-top: 20px;
+  text-decoration:underline;
+  cursor: pointer;
+}
+.logOut{
+  border: none;
+  background: none;
+  font-weight:550;
+}
+.oder, .lichsu{
+  cursor: pointer;
+}
+@media screen {
+  
+}

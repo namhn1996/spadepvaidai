@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-style: normal;
+  font-family: "SF Pro Text", "SF Pro Icons", "AOS Icons", "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
+  width: 100%;
+  background-color: rgba(250, 235, 215, 0.397);
+}
+header {
+  width: 100%;
+  min-width: 320px;
+  font-size: 17px;
+  background-color: rgba(221, 208, 193, 0.116);
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  background-color: aliceblue;
+  height: 70px;
+}
+header .headerClass .ulheaderClass {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  line-height: 40px;
+}
+header .headerClass .ulheaderClass li {
+  padding-top: 10px;
+  display: block;
+}
+header .headerClass .ulheaderClass li .reg,
+.login {
+  background-color: rgba(245, 245, 220, 0.007);
+  color: rgba(0, 0, 0, 0.8);
+  border: none;
+  font-size: 17px;
+}
+header .headerClass .ulheaderClass li a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+header .headerClass .ulheaderClass li .iconHeading {
+  font-size: 25px;
+  margin-left: 10px;
+}
+.liicon {
+  position: relative;
+}
+.liicon .bagIcon {
+  position: absolute;
+  top: 15px;
+  left: 27px;
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgb(102 84 73);
+  color: #fff;
+  text-align: center;
+  letter-spacing: 0;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 20px;
+}
+main h1 {
+  margin-top: 108px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 600;
+}
+main .list-products {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 40px;
+  padding: 50px 40px;
+}
+main .list-products .item {
+  width: 24%;
+  height: 520px;
+  text-align: center;
+  font-size: 25px;
+}
+main .list-products .item .name-item {
+  font-weight: 600;
+  padding-bottom: 10px;
+  font-size: 35px;
+
+}
+main .list-products .item .price {
+  padding-bottom: 10px;
+  color: red;
+  font-size: 30px;
+}
+main .list-products .item .stars {
+  height: 30px;
+  width: 100%;
+}
+main .list-products .item .stars .stars-icon {
+  width: 200px;
+  margin-left: 19px;
+}
+main .list-page {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-bottom: 40px;
+}
+main .list-page .page-number {
+  margin: 0 15px;
+  width: 37px;
+  height: 37px;
+  background-color: #363636;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .list-page .page-number a {
+  color: white;
+  text-decoration: none;
+}
+.img-card {
+  width: 23%;
+  height: 300px;
+}
+.item .img-item {
+  height: 290px;
+}
+
+footer {
+  background-color: rgba(90, 85, 77, 0.61);
+}
+footer .footer-class {
+  text-align: center;
+  padding: 20px 130px;
+}
+footer .footer-class a {
+  text-decoration: none;
+  color: black;
+}
+footer .footer-class .logo p {
+  font-size: 19px;
+}
+footer .footer-class .footer-text {
+  padding-top: 30px;
+  text-align: left;
+  padding-left: 200px;
+}
+footer .footer-class h4 {
+  padding-top: 10px;
+}
+footer .boder-footer {
+  border: 2px solid rgba(255, 255, 255, 0.473);
+  width: 50%;
+  margin-left: 25%;
+}
+footer .add {
+  text-align: center;
+  padding: 30px 0;
+}
+.modal h1 {
+  width: 100%;
+  text-align: center;
+}
+.modal .form-reg,
+.form-login {
+  width: 100%;
+  height: 40px;
+}
+
+.toLogin,
+.backReg {
+  margin-top: 20px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.hide {
+  display: none !important  ;
+}
+.logOut{
+  border: none;
+  background: none;
+  font-weight:550;
+  margin-left: 14px;
+  cursor: pointer;
+}
+.oder, .lichsu ,.item{
+  cursor: pointer;
+}
